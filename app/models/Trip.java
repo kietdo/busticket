@@ -9,6 +9,7 @@ public class Trip extends Model {
 	public Operator operator;
 	@ManyToOne
 	public Route route;	
+	@OneToOne
 	public Vehicle vehicle;	
 	public Date leavingTime;
 	public Date arrivingTime;

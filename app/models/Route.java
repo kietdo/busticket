@@ -9,7 +9,16 @@ public class Route extends Model{
 	public Operator operator;
 	@OneToMany (mappedBy = "route")
 	public List<Trip> trips;
+	@OneToOne
 	public Station origin;
+	@OneToOne
 	public Station destination;
-	public long regularPrice;
+	public double regularPrice;
+	public double vipPrice;
+	public double discountPrice;
+	public int duration;
+	
+	public String toString(){
+		return origin.name + "-"+destination.name;
+	}
 }

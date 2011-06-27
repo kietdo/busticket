@@ -11,12 +11,6 @@ syntax: glob
 # logs
 derby.log
 
-# eclipse conf file
-.settings
-.classpath
-.project
-.manager
-
 # building
 target
 build

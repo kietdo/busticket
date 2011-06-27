@@ -13,22 +13,21 @@ public class Operator extends Model{
 	
 	@OneToMany(mappedBy="operator", cascade=CascadeType.ALL)
 	public List<Trip> trips;
-	
+	/*
 	@OneToMany(mappedBy="operator", cascade=CascadeType.ALL)
-	public List<Vehicle> vehicles;
+	public List<Vehicle> vehicles;*/
 	
 	public Operator(String name) {
 		super();
 		this.name = name;
 		this.routes = new ArrayList<Route>();
 		this.trips = new ArrayList<Trip>();
-		this.vehicles = new ArrayList<Vehicle>();
+		//this.vehicles = new ArrayList<Vehicle>();
 	}
 	
 	public String toString(){
 		return name;
 	}
-	
 	
 	
 }
