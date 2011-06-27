@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC ">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>#{get 'title' /}</title>	
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="description" content="Description">
+	<meta name="keywords" content="Keywords">
+	<meta name="author" content="ItsyBit">
+	#{stylesheet src:"master.css" /}
+       <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
+    #{script src:"jquery-1.5.2.min.js" /}
+    #{script src:"jquery.tools-1.2.5.toolbox.expose.min.js" /}
+	
+</head>
+
+<body class="about">
+
+<div id="page-container">
+
+	<div id="main-nav">
+	<dl>
+		<dt id="about"><a href="http://www.subcide.com/examples/creating-a-css-layout-from-scratch/#">About</a></dt>
+		<dt id="services"><a href="http://www.subcide.com/examples/creating-a-css-layout-from-scratch/#">Services</a></dt>
+		<dt id="portfolio"><a href="http://www.subcide.com/examples/creating-a-css-layout-from-scratch/#">Portfolio</a></dt>
+		<dt id="contact"><a href="http://www.subcide.com/examples/creating-a-css-layout-from-scratch/#">Contact Us</a></dt>
+	</dl>
+	</div>
+	
+	<div id="header">
+		<h1><img src="${'/public/images/logo_enlighten.gif'}" width="236" height="36" alt="Enlighten Designs" border="0"></h1>
+	</div>
+	
+	#{doLayout /}
+	
+	<div id="footer">
+	<div id="altnav">
+		<a href="#">About</a> - 
+		<a href="#">Services</a> - 
+		<a href="#">Portfolio</a> - 
+		<a href="#">Contact Us</a> - 
+		<a href="#">Terms of Trade</a>
+	</div>
+	<div id="copyright">
+	Copyright © Enlighten Designs<br>
+	Powered by <a href="http://www.enlightenhosting.com/">Enlighten Hosting</a> and
+	<a href="http://www.vadmin.co.nz/">Vadmin 3.0 CMS</a>
+	</div>
+	</div>
+
+</div>
+
+
+</body></html>
